@@ -37,4 +37,6 @@ ax.set_ylabel('Y coordinate (cm)')
 ax.set_zlabel('Voltage (V)')
 plt.title('Electric Potential Scalar Field')
 
+ax.view_init(elev = 30, azim = 225, roll = 0)
+
 plt.show()
