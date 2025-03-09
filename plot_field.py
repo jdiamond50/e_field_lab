@@ -54,7 +54,7 @@ for x in range(len(fields)):
         #print("x = ", x, "; y = ", y)
         Ex = -1 * (data[9 * (x+2) + y + 1][2] - data[9 * x + y + 1][2])
         Ey = -1 * (data[9 * (x+1) + y + 2][2] - data[9 * (x+1) + y][2])
-        plt.quiver(x, y, Ex, Ey, scale=23)
+        plt.quiver(x * 2 + 1, y * 2 + 1, Ex, Ey, scale=23)
         #print("x = ", x, "; y = ", y, "; Ex = ", Ex, "; Ey = ", Ey)
 
 plt.grid()
